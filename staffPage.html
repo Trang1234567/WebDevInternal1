@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>staffPage</title>
+    <link rel="stylesheet" href="cssstaffpage.css">
+</head>
+<body>
+<header class="pageHeader">
+    <h1>Cool School</h1>
+<label for="department">Department</label>
+<select name="department" id="department" required>
+    <option value="Cs">Computer Science</option>
+    <option value="Phy">Physics</option>
+    <option value="Math">Math</option>
+    <option value="Economy">Economy</option>
+
+</select>
+<label for="semester">Semester</label>
+<select name="semester" id="semester" required>
+    <option value="Winter">Winter</option>
+    <option value="Summer">Summer</option>
+</select>
+    <p>logged in as staff</p>
+    </header>
+<nav class="bar">
+    <a href="overviewCourses.html">Overview Courses</a>
+</nav>
+    <div class="listcontainer">
+        <h>Students:</h>
+        <table class = "content-table">
+            <thead>
+            <tr>
+                <th>Student_Id</th>
+                <th>First_Name</th>
+                <th>Last_Name</th>
+                <th>DOB</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>Email_ID</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>12345</td>
+                <td>Trango</td>
+                <td>Nguyen</td>
+                <td>19/01/1995</td>
+                <td>female</td>
+                <td>Computer Science</td>
+                <td>s0573581@htw-berlin.de</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>adminPage</title>
+    <link rel="stylesheet" href="cssadminpage.css">
+    <script src="lists.js"></script>
+</head>
+<body>
+<header class="pageHeader">
+    <h1>Cool School</h1>
+   <button id="update" onclick="update()">Update</button>
+    <button id="delete" onclick="delete()">Delete</button>
+    <button id="add" onclick="addStudent()">Add</button><br>
+
+    <label for="department">Department</label>
+    <select name="department" id="department" onchange="filterbyDepartment()" required>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Economy">Economy</option>
+        <option value="Physics">Physics</option>
+        <option value="Maths">Maths</option>
+    </select>
+    <label for="semester">Semester</label>
+    <select name="semester" id="semester" onchange="filterbySemester()" required>
+        <option value="Winter">Winter</option>
+        <option value="Summer">Summer</option>
+    </select>
+    <p>logged in as admin</p>
+</header>
+
+    <div class="listcontainer">
+        <h>Students</h>
+        <table class = "content-table">
+        <thead>
+            <tr>
+            <th>Student_Id</th>
+            <th>First_Name</th>
+            <th>Last_Name</th>
+            <th>DOB</th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>Email_ID</th>
+            </tr>
+        </thead>
+            </tr>
+            <tbody>
+            <tr>
+                <td>12345</td>
+                <td>Trango</td>
+                <td>Nguyen</td>
+                <td>19/01/1995</td>
+                <td>female</td>
+                <td>Computer Science</td>
+                <td>s0573581@htw-berlin.de</td>
+            </tr>
+            <tr>
+                <td>12345</td>
+                <td>Trango</td>
+                <td>Nguyen</td>
+                <td>19/01/1995</td>
+                <td>female</td>
+                <td>Computer Science</td>
+                <td>s0573581@htw-berlin.de</td>
+            </tbody>
+        </table>
+    </div>
+    <button id="stafflist" onclick="changelisttostaff()">Staff List</button>
+</body>
+</html>
